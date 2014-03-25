@@ -11,6 +11,55 @@
       <h1>todos</h1>
       <input type="text" id="new-todo" placeholder="So, what..?">
     </header>
+
+    <section class="main">
+      <ul class="todo-list">
+        <li class="completed">
+          <input class="toggle" type="checkbox">
+          <label>Learn Ember.js</label>
+          <button class="destroy"></button>
+        </li>
+        <li>
+          <input class="toggle" type="checkbox">
+          <label>...</label>
+          <button class="destroy"></button>
+        </li>
+        <li>
+          <input class="toggle" type="checkbox">
+          <label>Profit!</label>
+          <button class="destroy"></button>
+        </li>
+      </ul>
+
+      <input class="toggle-all" type="checkbox" id="toggle-all">
+    </section>
+
+    <footer class="main-footer" id="main-footer">
+      <span id="todo-count" class="todo-count">
+        <strong>2</strong> todos left
+      </span>
+      <ul class="filters" id="filters">
+        <li>
+          <a href="all" class="selected">All</a>
+        </li>
+        <li>
+          <a href="active">Active</a>
+        </li>
+        <li>
+          <a href="completed">Completed</a>
+        </li>
+      </ul>
+
+      <button class="clear-completed" id="clear-completed">
+        Clear completed (1)
+      </button>
+
+    </footer>
+
+    <footer class="footer-info" id="info">
+      <p>Double-click to edit a Todo</p>
+    </footer>
+
   </section>
 
 </body>
